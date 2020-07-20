@@ -15,6 +15,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MyToasterService } from './utility/MyToasterService';
 import { LoginComponent } from './views/login/login.component';
 import { StudentComponent } from './views/student/student.component';
+import { RegisterComponent } from './views/register/register.component';
+import { HttpService } from './utility/HttpService';
+import { HttpClient, HttpHandler, HttpClientModule} from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +27,8 @@ import { StudentComponent } from './views/student/student.component';
     ContactCreateComponent,
     ContactListComponent,
     LoginComponent,
-    StudentComponent
+    StudentComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +36,8 @@ import { StudentComponent } from './views/student/student.component';
     FormsModule,
     ReactiveFormsModule,
     ToastrModule.forRoot(),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule,
   ],
   providers: [ Utility,MyToasterService],
   bootstrap: [AppComponent]
