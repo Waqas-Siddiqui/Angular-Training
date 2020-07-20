@@ -1,4 +1,3 @@
-// mytoaster.service.ts
 import { Injectable } from '@angular/core';
 import { ToastrService, IndividualConfig } from 'ngx-toastr';
 
